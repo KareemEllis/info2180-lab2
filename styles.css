@@ -1,0 +1,68 @@
+body{
+    color: #2D3748;
+    font-size: 18px;
+    font-family: -apple-system,BlinkMacSystemFont,"SegoeUI",Roboto,"Helvetica Neue",Arial,"Noto Sans",sansserif;
+
+}
+/***********HEADER SECTION***********/
+header{
+    background-color: #63B3ED;
+    color: #FFFFFF;
+}
+header h1{
+    font-size: 36px;
+    font-family:  Georgia, 'Times New Roman', Times, serif;
+}
+
+/***********POSTS SECTION***********/
+article h2{
+    font-size: 32px;
+    color: #48BB78;
+}
+
+article h3{
+    color: #718096;
+}
+article img{
+    width: 180px;
+}
+.float-left{
+    float: left;
+}
+.float-right{
+    float: right;
+}
+
+/***********SIDEBAR SECTION***********/
+aside div{
+    padding: 15px;
+}
+
+#Social, #Archive h3{
+    font-family: Georgia,'Times New Roman', Times, serif;
+    color: #48BB78;
+}
+#Social ul, #Archive ul{
+    list-style-type: none;
+    padding: 0;
+}
+#Social a, #Archive a{
+    text-decoration: none;
+    color: #4299E1;
+}
+
+#About{
+    background-color: #E2E8F0;
+}
+#About h3{
+    color: #000000;
+    font-family: Georgia,'Times New Roman', Times, serif
+}
+
+/***********FOOTER SECTION***********/
+footer{
+    background-color: #2C5282;
+    color: #FFFFFF;
+}
+
+
