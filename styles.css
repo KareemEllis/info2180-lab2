@@ -8,10 +8,20 @@ h1,h2,h3{
     margin: 0;
 }
 /***********GRID LAYOUT**************/
-
+.container{
+    display: grid;
+    grid-template-columns: 3fr 1fr;
+    grid-template-areas:
+    "header header"
+    "article sidebar"
+    "footer footer"
+    ;
+}
 
 /***********HEADER SECTION***********/
 header{
+    grid-area: header;
+
     background-color: #63B3ED;
     color: #FFFFFF;
 }
@@ -26,6 +36,8 @@ header img{
 
 /***********POSTS SECTION***********/
 article h2{
+    grid-area: article;
+
     font-size: 32px;
     color: #48BB78;
 }
@@ -45,6 +57,8 @@ article img{
 
 /***********SIDEBAR SECTION***********/
 aside div{
+    grid-area: sidebar;
+
     padding: 15px;
 }
 
@@ -71,6 +85,8 @@ aside div{
 
 /***********FOOTER SECTION***********/
 footer{
+    grid-area: footer;
+
     background-color: #2C5282;
     color: #FFFFFF;
 }
