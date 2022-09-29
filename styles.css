@@ -4,6 +4,12 @@ body{
     font-family: -apple-system,BlinkMacSystemFont,"SegoeUI",Roboto,"Helvetica Neue",Arial,"Noto Sans",sansserif;
 
 }
+h1,h2,h3{
+    margin: 0;
+}
+/***********GRID LAYOUT**************/
+
+
 /***********HEADER SECTION***********/
 header{
     background-color: #63B3ED;
@@ -12,6 +18,10 @@ header{
 header h1{
     font-size: 36px;
     font-family:  Georgia, 'Times New Roman', Times, serif;
+}
+header img{
+    width: 180px;
+    border-radius: 50%;
 }
 
 /***********POSTS SECTION***********/
