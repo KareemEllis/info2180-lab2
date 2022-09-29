@@ -2,15 +2,17 @@ body{
     color: #2D3748;
     font-size: 18px;
     font-family: -apple-system,BlinkMacSystemFont,"SegoeUI",Roboto,"Helvetica Neue",Arial,"Noto Sans",sansserif;
-
+    margin: 0;
 }
 h1,h2,h3{
     margin: 0;
 }
+
 /***********GRID LAYOUT**************/
 .container{
     display: grid;
-    grid-template-columns: 3fr 1fr;
+    grid-gap: 80px;
+    grid-template-columns: 4fr 2fr;
     grid-template-areas:
     "header header"
     "article sidebar"
@@ -18,10 +20,22 @@ h1,h2,h3{
     ;
 }
 
+main{
+    margin-left: 200px;
+    
+}
+aside{
+    margin-right: 200px;
+}
 /***********HEADER SECTION***********/
 header{
     grid-area: header;
 
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    padding: 50px;
     background-color: #63B3ED;
     color: #FFFFFF;
 }
@@ -32,9 +46,13 @@ header h1{
 header img{
     width: 180px;
     border-radius: 50%;
+    margin-bottom: 20px;
 }
 
 /***********POSTS SECTION***********/
+hr{
+ margin: 50px 0 50px 0;
+}
 article h2{
     grid-area: article;
 
@@ -46,7 +64,8 @@ article h3{
     color: #718096;
 }
 article img{
-    width: 180px;
+    width: 130px;
+    margin: 20px;
 }
 .float-left{
     float: left;
@@ -89,6 +108,7 @@ footer{
 
     background-color: #2C5282;
     color: #FFFFFF;
+    padding-left: 250px;
 }
 
 
